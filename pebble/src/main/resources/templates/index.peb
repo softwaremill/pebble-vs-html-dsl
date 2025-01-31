@@ -1,0 +1,16 @@
+  {% extends "base.peb" %}
+
+  {% block content %}
+
+  <div class="contact-list-container">
+    <ul class="contact-list">
+      <li>Tom Red</li>
+      <li class="contact-list__contact--selected">Charles Green</li>
+      <li>Peter Blue</li>
+    </ul>
+    <button class="add-contact-button">Add</button>
+  </div>
+
+  {% include "contact-detail.peb" with { "contact": {"name": "Charles Green", "phone": "555-55-55", "email": "charles@example.com", "note": "A very nice person"} }%}
+
+  {% endblock %}

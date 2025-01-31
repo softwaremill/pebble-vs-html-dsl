@@ -1,0 +1,22 @@
+<article class="contact">
+    <h2 class="contact__name">{{ contact.name }}</h2>
+    <table>
+        <tbody class="contact__info">
+        <tr>
+            <th scope="row">Phone number:</th>
+            <td>{{ contact.phone }}</td>
+        </tr>
+        <tr>
+            <th scope="row">E-mail:</th>
+            <td>{{ contact.email }}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <section class="contact__note">
+        <h5>Note:</h5>
+        <p>{{ contact.note }}</p>
+    </section>
+
+    <button class="place-on-left">Edit</button>
+</article>

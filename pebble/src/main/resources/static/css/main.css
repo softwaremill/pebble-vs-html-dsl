@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin-inline: auto;
+  width: 900px;
+  display: flex;
+  gap: 20px;
+  padding: 1rem 2rem;
+}
+
+.contact-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: var(--pico-block-spacing-vertical);
+  padding: var(--pico-block-spacing-vertical) var(--pico-block-spacing-horizontal);
+  border-radius: var(--pico-border-radius);
+  background: var(--pico-card-background-color);
+  box-shadow: var(--pico-card-box-shadow);
+}
+
+.contact-list {
+  width: 200px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list li {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.contact-list li:hover {
+  text-decoration: underline;
+}
+
+.contact-list__contact--selected {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+ul li {
+  list-style: none;
+}
+
+.contact-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contact {
+  flex-grow: 1;
+}
+
+.contact__note {
+  min-height: 150px;
+}
+
+.place-on-left {
+  display: flex;
+  margin-left: auto;
+}
+
+td,
+th {
+  padding-inline: 0;
+  border-bottom: none;
+}
+
+input {
+  margin-bottom: 0 !important;
+}
+
+table {
+  margin-bottom: 0 !important;
+}
